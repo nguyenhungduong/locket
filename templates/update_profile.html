@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Hồ Sơ</title>
+    <link rel="stylesheet" href="../static/CSS/update-profile.css">
+    <link rel="icon" type="image/x-icon" href="../static/IMG/locket.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body class="body">
+
+
+
+    <div class="form-container">
+        <h2>Thay Đổi Hồ Sơ</h2>
+        <form id="profile-form" class="form-group">
+            <div class="form">
+                <label for="account-name">Thay đổi Tên Tài Khoản</label>
+                <input class="input" placeholder="Tên tài khoản" id="account-name" type="text" name="account-name">
+                <span class="input-border"></span>
+            </div>
+
+            <div class="form">
+                <label for="password">Thay đổi Mật Khẩu</label>
+                <input class="input" placeholder="Mật khẩu" id="password" type="password" name="password">
+                <span class="input-border"></span>
+            </div>
+
+            <div class="form">
+                <label for="email">Thay đổi Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" class="input">
+                <span class="input-border"></span>
+            </div>
+
+            <div class="form">
+                <label for="full-name">Thay đổi Họ và Tên</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Họ và Tên" class="input">
+                <span class="input-border"></span>
+            </div>
+
+            <div class="form">
+                <label for="date-of-birth">Thay đổi Ngày Sinh</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" class="input">
+                <span class="input-border"></span>
+            </div>
+
+
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="gender">Thay đổi Giới Tính</label>
+                    <select id="gender" name="gender">
+                        <option value="">Chọn giới tính</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="update_file_image">Thay đổi Hình Ảnh</label>
+                <input type="file" name="image" accept="image/*" id="update_file_image" class="img">
+
+            </div>
+            <div class="form-group">
+                <button type="submit"><i class="fa fa-save" aria-hidden="true" class="button"></i> Lưu Thay Đổi</button>
+                <div id="back_home" class="huy">Quay lại</div>
+            </div>
+        </form>
+    </div>
+    <script src="../static/js/api/serverlocket.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/js/api/check_status_user.js"></script>
+    <script src="../static/js/api/check_access.js"></script>>
+    <script src="../static/JS/style-update-profile.js"></script>
+</body>
+
+</html>
