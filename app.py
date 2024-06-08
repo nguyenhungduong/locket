@@ -7,8 +7,8 @@ from PIL import Image # pip install pillow
 import logging
 import io
 from flask_socketio import SocketIO,send, emit, disconnect # pip install flask-socketio
-sys.path.append('C:\\Users\\Administrator\\Desktop\\locket_web\\backend')
-from backend.connect_database import check_status_user,see_notifi,get_count_noti,get_notification,notification_friend,save_notification,get_user_like,unlike_post,like_post,check_username,select_post_fr,up_user,delete_post,update_post, get_friend,setting_profile,agree_friend,confirm_friendship,signIn,connect,create_post,signIn,signUp,search_name,insert_friend,check_friend,select_post_user,save_mess,get_mess
+sys.path.append('C:\\Users\\Administrator\\Desktop\\locket_web\\database')
+from database.connect_database import check_status_user,see_notifi,get_count_noti,get_notification,notification_friend,save_notification,get_user_like,unlike_post,like_post,check_username,select_post_fr,up_user,delete_post,update_post, get_friend,setting_profile,agree_friend,confirm_friendship,signIn,connect,create_post,signIn,signUp,search_name,insert_friend,check_friend,select_post_user,save_mess,get_mess
 #chuyển ảnh thành byte
 def image_to_blob(file_path):
     # Đọc ảnh từ thư mục
